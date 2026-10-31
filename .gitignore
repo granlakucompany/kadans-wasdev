@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.kadans-cache/
+.wasdev/
+.claude/
+.github/workflows/
+# Local user projects and rendered videos
+Analyseur-Kadans/
+exported-videos/
+kadans-projects/
+# Generated 10,000+ SVG design asset directories (reproducible via `python tools/make_vectors.py assets/design` and `python tools/make_lights.py assets/design`; LICENSE.md and manifest.json remain tracked)
+assets/design/SHAPES/
+assets/design/SPLASH/
+assets/design/LIGHTS/
+# Never commit FFmpeg or other binaries (GPL/LGPL builds are downloaded into user cache via `kadans setup`, never shipped in the MIT repository)
+ffmpeg*
+*.exe
+*.dll
+*.pyd
+*.so
+*.msi

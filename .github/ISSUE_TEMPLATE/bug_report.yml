@@ -1,0 +1,67 @@
+name: 🐞 Bug report
+description: Something does not work as expected in KADANS WASDEV VIDEO ENGINE.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem! You can write in English, French or Haitian Creole.
+        Please do not share private files or personal information.
+
+  - type: input
+    id: version
+    attributes:
+      label: Kadans version
+      description: Run `kadans --version` or check `pyproject.toml`.
+      placeholder: "0.6.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      options:
+        - Windows 11 (64-bit)
+        - Windows 10 (64-bit)
+        - Linux (x64 / ARM64)
+        - macOS (Apple Silicon / Intel)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Spec validation (kadans validate)
+        - Linter (kadans lint)
+        - HTML composition / preview (kadans html)
+        - Video rendering / FFmpeg / GPU (kadans render)
+        - Voice / Subtitles / Word timing
+        - Studio Timeline Editor (kadans timeline)
+        - MCP Server (kadans mcp)
+    validations:
+      required: true
+
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: spec
+    attributes:
+      label: Minimal spec.json or steps to reproduce
+      render: json
+    validations:
+      required: true
+
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Output of `kadans doctor` or error message (optional)
+      render: shell

@@ -1,0 +1,428 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="wasdev-media-keys" content="off"><!-- the editor owns Space/K/Backspace: host media shortcuts stay off -->
+
+<title>Kadans Timeline — WASDEV</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238b5cf6'/%3E%3Cstop offset='1' stop-color='%230098ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='4' y='4' width='56' height='56' rx='14' fill='%231d1230'/%3E%3Cpath d='M24 20L12 32l12 12' fill='none' stroke='url(%23g)' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M40 20l12 12-12 12' fill='none' stroke='url(%23g)' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M36 14L28 50' fill='none' stroke='%23b794ff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="alternate icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.ico">
+<style>
+:root{--bg:#0b0816;--panel:#120e20;--panel2:#161127;--line:#2a2440;--fg:#f3eefe;--dim:#b9addb;--mov:#8b5cf6;--vet:#21a366;--amb:#ff8a3d;--err:#ff5470}
+*{box-sizing:border-box}html,body{height:100%}body{margin:0;display:flex;flex-direction:column;background:var(--bg);color:var(--fg);font:13px system-ui,"Segoe UI",sans-serif;overflow:hidden}
+svg.ic{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;display:block}
+*{scrollbar-color:#3a2f55 #0e0b1a;scrollbar-width:thin}
+*::-webkit-scrollbar{width:11px;height:11px}
+*::-webkit-scrollbar-track{background:#0e0b1a}
+*::-webkit-scrollbar-thumb{background:#3a2f55;border-radius:6px;border:2px solid #0e0b1a}
+*::-webkit-scrollbar-thumb:hover{background:var(--mov)}
+*::-webkit-scrollbar-corner{background:#0e0b1a}
+button{display:inline-flex;align-items:center;gap:6px;background:#2e1754;color:var(--fg);border:1px solid #522b91;border-radius:7px;padding:5px 10px;cursor:pointer;font-weight:600;font-family:inherit}
+button:hover{background:#3d1f6d;border-color:#6d3ab8}button.pri{background:#4c1d95;border-color:#6d28d9;color:#fff}button.pri:hover{background:#5b21b6;filter:brightness(1.08)}button.on{background:#3b1d70;border-color:#a78bfa;color:#e9d5ff}
+.ico{padding:6px;min-width:30px;justify-content:center}
+#top .ico{width:32px;height:30px;padding:0;min-width:32px;justify-content:center;flex:none}
+#kadans-tip{position:fixed;z-index:999999;pointer-events:none;background:#18112e;color:#f3eefe;border:1px solid #8b5cf6;border-radius:7px;padding:5px 9px;font-size:11.5px;font-weight:700;box-shadow:0 8px 24px #000000a0, 0 0 12px #8b5cf640;opacity:0;transition:opacity .12s cubic-bezier(.4,0,.2,1);white-space:nowrap;display:none;transform:translate(-50%, 0)}
+#kadans-tip.show{opacity:1;display:block}
+#kadans-tip .tip-main{font-weight:700;color:#fff;display:block;line-height:1.2}
+#kadans-tip .tip-sub{font-weight:500;font-size:10px;color:#b9addb;display:block;line-height:1.15;margin-top:2px}
+#top{display:flex;align-items:center;gap:7px;padding:6px 12px;background:var(--panel);border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+#top .brand{display:flex;align-items:center;gap:7px;font-weight:800;color:var(--mov);white-space:nowrap;flex:none}
+#top .pill{background:#241d3f;color:var(--dim);border-radius:999px;padding:2px 9px;font-size:11px;flex:none}
+#titlewrap{flex:0 1 160px;display:flex;justify-content:center;align-items:center;gap:6px;min-width:50px;overflow:hidden}
+#vtitle{background:transparent;border:1px solid transparent;color:var(--fg);font-weight:700;font-size:13.5px;text-align:center;border-radius:7px;padding:3px 6px;flex:1;min-width:50px;max-width:200px;overflow:hidden;text-overflow:ellipsis}
+#vtitle:hover{border-color:var(--line)}#vtitle:focus{border-color:var(--mov);background:#0e0b1a;outline:none}
+#msg{color:var(--dim);font-size:12px;min-width:50px;text-align:right;white-space:nowrap}
+.vsep{width:1px;height:22px;background:var(--line);flex:none}
+#projtabs{display:flex;align-items:center;gap:4px;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-ms-overflow-style:none;flex:0 1 auto;min-width:40px;max-width:clamp(120px, 28vw, 340px)}
+#projtabs::-webkit-scrollbar{display:none}
+.ptab{display:flex;align-items:center;gap:5px;background:#1b1530;border:1px solid var(--line);border-radius:7px;padding:2px 7px;font-size:11.5px;cursor:pointer;flex:0 1 110px;min-width:32px;max-width:125px;overflow:hidden;white-space:nowrap;user-select:none;transition:all .15s ease}
+.ptab.on{background:#2a1745;border-color:var(--mov);color:#fff}
+.ptab .ptab-title{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ptab .x{flex:none;color:var(--dim);font-weight:700;font-size:12px;padding:0 2px;line-height:1}
+.ptab .x:hover{color:var(--err)}
+#topActions{display:flex;align-items:center;gap:6px;flex:0 0 auto;margin-left:auto;z-index:2}
+#mid{flex:1;display:flex;min-height:0}
+.split{flex:none;background:var(--line);z-index:5}.split.v{width:5px;cursor:col-resize}.split.h{height:5px;cursor:row-resize}.split:hover{background:var(--mov)}
+#left{width:335px;flex:none;display:flex;flex-direction:row;border-right:1px solid var(--line);background:var(--panel);overflow:hidden}
+.icon-rail{width:64px;flex:none;display:flex;flex-direction:column;align-items:center;background:var(--panel);padding:8px 0;gap:5px;user-select:none;z-index:3}
+#lrail{border-right:1px solid var(--line)}
+#rrail{border-left:1px solid var(--line)}
+.rail-btn{display:flex;flex-direction:column;align-items:center;justify-content:center;width:54px;height:54px;padding:4px 2px;border-radius:9px;border:1px solid transparent;background:transparent;color:var(--dim);cursor:pointer;transition:all .15s ease}
+.rail-btn:hover{background:#1c1533;color:var(--fg);border-color:var(--line)}
+.rail-btn.on{background:#281a4d;color:#fff;border-color:var(--mov)}
+.rail-btn svg{width:22px;height:22px}
+.rail-btn .rlbl{font-size:11px;font-weight:700;margin-top:4px;letter-spacing:.2px;line-height:1;pointer-events:none}
+#lpanel{flex:1;min-width:0;display:flex;flex-direction:column;background:var(--panel2)}
+#lhdr,#ihdr{height:32px;flex:none;display:flex;align-items:center;padding:0 10px;border-bottom:1px solid var(--line);font-weight:700;font-size:11px;letter-spacing:.6px;color:var(--mov);text-transform:uppercase}
+#lbody{flex:1;overflow:auto;padding:8px;background:var(--panel2);display:flex;flex-direction:column;gap:7px}
+#asearch{display:flex;gap:4px}#asearch input,#asearch select{flex:1;min-width:0;background:#0e0b1a;border:1px solid var(--line);color:var(--fg);border-radius:7px;padding:5px;font-size:12px}
+#agrid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.asset{aspect-ratio:1;background:#0e0b1a;border:1px solid var(--line);border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:grab;padding:6px;overflow:hidden}
+.asset:hover{border-color:var(--mov);background:#191230}.asset img{max-width:100%;max-height:100%;filter:brightness(0) invert(1);opacity:.85;pointer-events:none}
+.item{display:flex;align-items:center;gap:8px;background:#1b1530;border:1px solid var(--line);border-radius:9px;padding:8px;cursor:pointer}
+.item:hover{background:#221a3a}.item.on{outline:1px solid var(--vet)}
+.item .thumb{width:52px;height:38px;border-radius:5px;background:#0e0b1a;display:flex;align-items:center;justify-content:center;color:var(--dim);flex:none;overflow:hidden}
+.item .t{flex:1;min-width:0}.item .t b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.item .t span{color:var(--dim);font-size:11px}
+#lbody pre{white-space:pre-wrap;word-break:break-word;color:var(--dim);font:11px ui-monospace,Consolas,monospace;margin:0}
+.cat{display:flex;align-items:center;gap:8px;padding:7px 8px;border-radius:8px;cursor:pointer;color:var(--fg);background:#1b1530;border:1px solid var(--line)}.cat:hover{background:#221a3a}
+#lfoot{border-top:1px solid var(--line);padding:7px}#lfoot button{width:100%;justify-content:center}
+#center{flex:1;display:flex;flex-direction:column;min-width:0}
+#pvwrap{flex:1;position:relative;overflow:hidden;background:#07050f;display:flex;align-items:center;justify-content:center}#pv{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000;transform-origin:center center}
+#drophint{position:absolute;inset:0;display:none;align-items:center;justify-content:center;background:#8b5cf644;border:3px dashed var(--mov);color:#fff;font-weight:700;font-size:18px;pointer-events:none}
+#pvwrap.drag #drophint{display:flex}
+#ovbox{position:absolute;border:2px dashed var(--mov);background:#8b5cf61f;cursor:move;z-index:6;display:none;box-sizing:border-box}
+#ovbox .ovr{position:absolute;right:-7px;bottom:-7px;width:14px;height:14px;border-radius:3px;background:var(--mov);border:2px solid #fff;cursor:nwse-resize}
+#ovbox .ovlab{position:absolute;top:-20px;left:0;background:var(--mov);color:#fff;font-size:10px;padding:1px 5px;border-radius:4px;white-space:nowrap}
+#pbar{display:flex;align-items:center;gap:8px;padding:5px 10px;background:var(--panel);border-top:1px solid var(--line);color:var(--dim);font-size:12px}
+#pvzoombar{display:flex;align-items:center;gap:5px;margin:0 auto;background:#160f29;border:1px solid #3d226e;border-radius:8px;padding:2px 6px}
+#pvZoomLbl{min-width:44px;text-align:center;font-weight:700;color:var(--fg);font-size:11.5px;cursor:pointer;user-select:none}
+#insp{width:360px;flex:none;display:flex;flex-direction:row;border-left:1px solid var(--line);background:var(--panel);overflow:hidden}
+#ipanel{flex:1;min-width:0;display:flex;flex-direction:column;background:var(--panel2)}
+#ibody{flex:1;overflow:auto;padding:10px}
+#insp h3{display:flex;align-items:center;gap:6px;color:var(--mov);font-size:11px;text-transform:uppercase;letter-spacing:.6px;margin:8px 0 4px}
+#insp label{display:block;color:var(--dim);font-size:12px;margin:8px 0 3px}
+#insp input,#insp textarea,#insp select{width:100%;background:#0e0b1a;border:1px solid var(--line);color:var(--fg);border-radius:8px;padding:7px;font:13px system-ui}
+#insp textarea{min-height:54px;resize:vertical}
+input[type=range]{padding:0;accent-color:var(--mov)}
+.swatches{display:grid;grid-template-columns:repeat(8,1fr);gap:5px;margin-top:6px}
+.sw{aspect-ratio:1;border-radius:6px;border:1px solid #ffffff22;cursor:pointer}.sw:hover{transform:scale(1.12)}
+.vu{height:8px;border-radius:4px;background:#0e0b1a;overflow:hidden;margin-top:4px}.vu i{display:block;height:100%;width:40%;background:linear-gradient(90deg,var(--vet),var(--amb),var(--err))}
+.meter{flex:1;min-width:0;display:flex;gap:3px;align-items:stretch;height:100%;background:#0e0b1a;border:1px solid var(--line);border-radius:6px;padding:4px 3px;margin:0}
+.meter .mcol{flex:1;background:#15101f;border-radius:2px;position:relative;overflow:hidden;display:flex;align-items:flex-end}
+.meter .mcol i{display:block;width:100%;height:0%;background:linear-gradient(0deg,#4c1d95,#6d28d9 55%,#8b5cf6 85%,#a78bfa);transition:height .05s linear}
+.meter .mdb{width:16px;color:var(--dim);font-size:8.5px;text-align:right;display:flex;flex-direction:column;justify-content:space-between;line-height:1;padding-right:1px}
+#tlmeter{width:80px;flex:none;border-left:1px solid var(--line);background:var(--panel);padding:6px 6px 5px;display:flex;flex-direction:column;gap:5px;user-select:none}
+#tlmeter .mlabel{color:var(--dim);font-size:9.5px;text-align:center;letter-spacing:.8px;font-weight:700}
+.meter-fader-body{display:flex;gap:5px;flex:1;min-height:0;align-items:stretch}
+.fader-col{width:22px;flex:none;display:flex;flex-direction:column;align-items:center;position:relative}
+.fader-track{width:10px;height:100%;background:#0e0b1a;border:1px solid var(--line);border-radius:5px;position:relative;cursor:pointer;touch-action:none}
+.fader-track:hover{border-color:var(--mov)}
+.fader-fill{position:absolute;bottom:0;left:1px;right:1px;height:50%;background:linear-gradient(0deg,#4c1d95,#8b5cf6);border-radius:3px;pointer-events:none;transition:background .15s}
+.fader-unity{position:absolute;bottom:50%;left:-2px;right:-2px;height:1px;background:#a78bfa88;pointer-events:none;z-index:1}
+.fader-thumb{position:absolute;left:50%;bottom:50%;transform:translate(-50%,50%);width:20px;height:12px;background:#241d3f;border:1.5px solid var(--mov);border-radius:4px;box-shadow:0 2px 6px #000c;cursor:grab;z-index:2;display:flex;align-items:center;justify-content:center}
+.fader-thumb::after{content:"";width:8px;height:2px;background:#f3eefe;border-radius:1px;display:block}
+.fader-thumb:hover{background:#3b1d70;border-color:#a78bfa}
+.fader-track.dragging .fader-thumb{cursor:grabbing;background:#5b21b6;border-color:#fff;box-shadow:0 0 10px #8b5cf6}
+#tlmeter .volctl{display:flex;align-items:center;justify-content:space-between;gap:3px;padding:3px 2px 0;border-top:1px solid #ffffff0d}
+#tlmeter .volctl .ico{min-width:0;padding:2px;width:24px;height:24px;border-radius:5px;background:transparent;border:1px solid transparent;color:var(--dim)}
+#tlmeter .volctl .ico:hover{background:#2a1745;border-color:var(--line);color:var(--fg)}
+#tlmeter .volctl .ico.muted{color:var(--err)}
+#volval{color:var(--mov);font-size:10px;font-weight:800;cursor:pointer;text-align:right;padding-right:2px;user-select:none;min-width:32px}
+#volval:hover{color:#fff;text-decoration:underline}
+.volic{display:flex;align-items:center;justify-content:center}
+.volic svg{width:14px;height:14px}
+#ai{border-top:1px solid var(--line);padding:10px;background:var(--panel2)}#ai .row{display:flex;gap:6px;margin-top:6px}#ai textarea{min-height:46px}
+#tl{height:234px;display:flex;flex-direction:column;background:var(--panel2);border-top:1px solid var(--line)}
+#tlhdr{display:flex;align-items:center;gap:3px;padding:3px 6px;border-bottom:1px solid var(--line);position:relative;overflow-x:auto;overflow-y:hidden;white-space:nowrap}
+#tlhdr button.ico{min-width:27px;height:27px;padding:3px}
+#tlhdr .sep{width:1px;height:18px;background:var(--line);margin:0 3px;flex:none}
+.menu{position:fixed;top:38px;background:#160f29;border:1px solid #522b91;border-radius:9px;padding:5px;z-index:99995;display:none;min-width:215px;box-shadow:0 12px 32px #000d}
+.menu .mi{display:flex;align-items:center;gap:9px;padding:7px 9px;border-radius:7px;cursor:pointer;color:var(--fg);font-size:12.5px}.menu .mi:hover,.menu .mi.on{background:#2a1745}.menu .mi .k{margin-left:auto;color:var(--dim);font-size:11px}
+#toolmenu{left:62px}#trackmenu{right:8px}
+#tRecord.rec{color:#ff5470;background:#3a1420;border-color:#ff5470;animation:pulse 1s infinite}@keyframes pulse{50%{opacity:.5}}
+#projmenu{top:44px;left:120px;max-height:340px;overflow:auto}
+#tlwrap{flex:1;display:flex;min-height:0}
+#tlnames{width:214px;flex:none;overflow:hidden;border-right:1px solid var(--line);background:var(--panel);position:relative}
+#tlscrollwrap{flex:1;overflow:auto;position:relative}#tlinner{position:relative}
+#ruler{height:22px;position:sticky;top:0;background:var(--panel);border-bottom:1px solid var(--line);z-index:3;cursor:text}
+#ruler .tk{position:absolute;top:0;height:22px;border-left:1px solid #ffffff1a;color:var(--dim);font-size:10px;padding-left:3px;pointer-events:none}
+.trow{min-height:28px;border-bottom:1px solid #ffffff10;position:relative;box-sizing:border-box}
+.tname{min-height:28px;display:flex;align-items:center;gap:4px;padding:0 6px 0 4px;border-bottom:1px solid #ffffff10;color:var(--fg);font-size:12px;overflow:hidden;position:relative;box-sizing:border-box;user-select:none;cursor:pointer}
+.tname .tdrag{cursor:grab;color:var(--dim);opacity:.5;display:flex;align-items:center;justify-content:center;width:14px;height:22px;flex:none}
+.tname .tdrag:hover{opacity:1;color:var(--mov)}
+.tname .dot{width:8px;height:8px;border-radius:2px;flex:none}.tname .t{flex:1 1 auto;min-width:56px;overflow:hidden;display:flex;flex-direction:column;justify-content:center;line-height:1.15;color:var(--fg);text-shadow:0 1px 1px #0008}
+.tname .t b{font-weight:700;white-space:nowrap}.tname .t small{font-size:10px;font-weight:500;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tname .tctl{flex:none}
+.tname:hover{background:#1a1430}.tname.sel{background:#281a4d;border-left:2px solid var(--mov)}
+.tname .tctl svg{width:13px;height:13px}.tname .tctl:hover{opacity:.7}
+.tname .tdd{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:4px;color:var(--dim);font-size:11px;cursor:pointer;flex:none;transition:all .12s}
+.tname .tdd:hover{background:#3b1d70;color:#fff}
+.t-resizer{position:absolute;left:0;right:0;bottom:-3px;height:6px;cursor:ns-resize;z-index:15;background:transparent;touch-action:none}
+.t-resizer:hover,.t-resizer.resizing{background:#8b5cf6aa;box-shadow:0 0 6px #8b5cf6}
+.tname.t-dragging{opacity:0.35;background:#3b1d70!important}
+.trow.t-dragging{opacity:0.35}
+.t-drop-line{position:absolute;left:0;right:0;height:2px;background:#38bdf8;box-shadow:0 0 10px #38bdf8;z-index:30;pointer-events:none}
+.blk{position:absolute;top:4px;bottom:4px;border-radius:7px;background:linear-gradient(180deg,#5a3fb0,#3a2470);border:1px solid #8b5cf6aa;cursor:grab;overflow:hidden;color:#fff;font-size:11px;display:flex;align-items:center;padding:0 8px;user-select:none;box-sizing:border-box}
+.blk.sel{outline:2px solid var(--vet);z-index:2}.blk.bad{border-color:var(--err);background:linear-gradient(180deg,#7a2440,#4a1428)}
+.blk .lab{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;pointer-events:none}
+.blk .lab{z-index:1}.wave{position:absolute;inset:0;pointer-events:none;z-index:0}
+.blk .hdl{position:absolute;right:0;top:0;width:9px;height:100%;cursor:ew-resize;background:#ffffff22}
+.blk .hdll{position:absolute;left:0;top:0;width:9px;height:100%;cursor:ew-resize;background:#ffffff22}
+.blk .kf{position:absolute;top:-4px;width:9px;height:9px;background:var(--amb);border:1px solid #000;transform:rotate(45deg);pointer-events:none}
+.trow.drop{background:#8b5cf622}
+#playhead{position:absolute;top:0;width:2px;background:var(--vet);z-index:4;pointer-events:none}
+#playhead::before{content:"";position:absolute;top:0;left:-5px;border:6px solid transparent;border-top-color:var(--vet)}
+</style></head>
+<body>
+<div id="top">
+  <span class="brand"><svg viewBox="0 0 64 64" style="width:20px;height:20px;display:block;flex:none"><defs><linearGradient id="wg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#0098ff"/></linearGradient></defs><rect x="4" y="4" width="56" height="56" rx="14" fill="#1d1230"/><path d="M24 20L12 32l12 12" fill="none" stroke="url(#wg)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 20l12 12-12 12" fill="none" stroke="url(#wg)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 14L28 50" fill="none" stroke="#b794ff" stroke-width="5" stroke-linecap="round"/></svg> Kadans Timeline</span><span class="pill" id="dur">-</span>
+  <button id="bProj" title="Pwoje yo (nouvo / ouvri / chanje)" data-tip="Pwojè" data-sub="Chanje / Chwazi pwojè"><span data-ico="folder"></span><span id="projname">Pwoje</span><span data-ico="caret"></span></button>
+  <button class="pri ico" id="bNewProj" title="Nouvo pwojè — Kreye yon nouvo pwojè Kadans (Ctrl+N)" data-tip="Nouvo pwojè" data-sub="Kreye nouvo pwojè (Ctrl+N)"><span data-ico="plus"></span></button>
+  <button class="ico" id="bOpenFile" title="Ouvri fichye — HTML Animasyon, XML Premiere/DaVinci, Pwojè Kadans (Ctrl+O)" data-tip="Ouvri fichye" data-sub="HTML, XML, FCPXML, EDL, Kadans (Ctrl+O)"><span data-ico="open"></span></button>
+  <input type="file" id="fiOpenFile" accept=".html,.htm,.xml,.fcpxml,.edl,.json,.kadans" style="display:none">
+  <span class="vsep"></span>
+  <div id="projtabs"></div>
+  <div id="titlewrap">
+    <input id="vtitle" placeholder="Tit videyo a" title="Tit videyo a (nan mitan ba a)">
+    <select id="vlang" style="background:#1b1530;border:1px solid var(--line);color:var(--fg);border-radius:7px;padding:3px 6px;font-size:12px;font-weight:600;cursor:pointer;outline:none" title="Lang videyo & vwa a">
+      <option value="ht">Kreyòl (ht)</option>
+      <option value="fr">Français (fr)</option>
+      <option value="en">English (en)</option>
+      <option value="es">Español (es)</option>
+      <option value="pt">Português (pt)</option>
+      <option value="ru">Русский (ru)</option>
+      <option value="it">Italiano (it)</option>
+      <option value="de">Deutsch (de)</option>
+    </select>
+  </div>
+  <div id="topActions">
+    <span id="msg">-</span>
+    <button class="ico" id="bBuild" title="Aperçu — Rafrechi aperçu videyo a" data-tip="Aperçu" data-sub="Rafrechi aperçu"><span data-ico="refresh"></span></button>
+    <button class="ico" id="bExport" title="HTML — Ekspòte yon sèl fichye HTML otonòm" data-tip="HTML" data-sub="Ekspòte HTML otonòm"><span data-ico="download"></span></button>
+    <button class="ico" id="bRemotion" title="✦ Remotion Studio — Preview GPU nan Microsoft Edge" data-tip="Remotion" data-sub="GPU Preview nan Edge" style="border-color:#7c3aed;background:#24163d"><span data-ico="film"></span></button>
+    <button class="ico" id="bHistory" title="Istorik — Tout vèsyon montaj la (Timeline, AI, restorasyon)" data-tip="Istorik" data-sub="Vèsyon & restorasyon"><span data-ico="undo"></span></button>
+    <button class="pri ico" id="bRender" title="Rendu MP4 — Ekspòte fichye videyo final la" data-tip="Rendu MP4" data-sub="Ekspòte videyo final"><span data-ico="film"></span></button>
+    <button class="pri ico" id="bSave" title="Enregistrer — Sove pwojè a (Ctrl+S)" data-tip="Enregistrer" data-sub="Ctrl+S"><span data-ico="save"></span></button>
+    <button class="ico" id="bTopAi" title="AI Chat — Ouvri Chat AI Kadans & 1-Click MCP / AI CLI" data-tip="AI Chat" data-sub="Asistan IA Kadans" style="background:#3b1d70;border-color:#8b5cf6;color:#f3eefe"><span data-ico="sparkles"></span></button>
+    <button class="ico" id="bSettings" title="Paramètres — ElevenLabs, MCP AI CLI, mikro, enkodaj" data-tip="Paramètres" data-sub="Konfigirasyon"><span data-ico="settings"></span></button>
+  </div>
+</div>
+<div id="mid">
+  <div id="left">
+    <div id="lrail" class="icon-rail">
+      <button class="rail-btn on" data-lt="media" title="Medya — Pwojè medya"><span data-ico="film"></span><span class="rlbl">Medya</span></button>
+      <button class="rail-btn" data-lt="assets" title="Asset — Libreri grafik"><span data-ico="layers"></span><span class="rlbl">Asset</span></button>
+      <button class="rail-btn" data-lt="cat" title="Katalog — Modèl & Sèn"><span data-ico="copy"></span><span class="rlbl">Katalog</span></button>
+      <button class="rail-btn" data-lt="sfx" title="SFX — Efè Son (whoosh, pop, hit, etc.)"><span data-ico="volume"></span><span class="rlbl">SFX</span></button>
+      <button class="rail-btn" data-lt="comp" title="Konpo — Sèn & Konpozisyon"><span data-ico="sliders"></span><span class="rlbl">Konpo</span></button>
+      <button class="rail-btn" data-lt="code" title="Kòd — JSON Spec"><span data-ico="code"></span><span class="rlbl">Kòd</span></button>
+      <div style="flex:1"></div>
+      <button class="rail-btn" id="bLint" title="Lint — Verifye pwojè a"><span data-ico="check"></span><span class="rlbl">Lint</span></button>
+    </div>
+    <div id="lpanel">
+      <div id="lhdr"><span id="ltitle">MEDYA</span></div>
+      <div id="lbody"></div>
+    </div>
+  </div>
+  <div class="split v" id="splitL"></div>
+  <div id="center">
+    <div id="pvwrap"><iframe id="pv"></iframe><div id="drophint">Lage isit la pou ajoute nan sen aktyel la</div></div>
+    <div id="pbar">
+      <button class="ico" id="bPlay" title="Jwe / Kanpe (Space)"><span data-ico="play"></span></button>
+      <button class="ico" id="bReplayP" title="Rejwe depi 0"><span data-ico="replay"></span></button>
+      <span id="time">0.0 / 0.0 s</span>
+      <div id="pvzoombar" title="Zoom / Fit ScreenView (oswa itilize woulet souri a sou ekran an)">
+        <button class="ico" id="pvZoomOut" title="Dezoume ScreenView (-)"><span data-ico="zoomout"></span></button>
+        <span id="pvZoomLbl" title="Klike pou retounen 100% Fit">Fit</span>
+        <button class="ico" id="pvZoomIn" title="Zoume ScreenView (+)"><span data-ico="zoomin"></span></button>
+        <button id="pvFit" title="Fit ScreenView pou mezi espas la"><span data-ico="fit"></span>Fit</button>
+      </div>
+      <button class="ico" id="bShot" title="Ekspote frame aktyel la (PNG) — Mande kote pou anrejistre"><span data-ico="camera"></span></button>
+      <span id="selinfo" style="min-width:60px;text-align:right">-</span>
+    </div>
+  </div>
+  <div class="split v" id="splitR"></div>
+  <div id="insp">
+    <div id="ipanel">
+      <div id="ihdr"><span id="ititle">PWOPRIYETE</span></div>
+      <div id="ibody"></div>
+    </div>
+    <div id="rrail" class="icon-rail">
+      <button class="rail-btn on" data-rt="props" title="Pwopriyete (Properties)"><span data-ico="settings"></span><span class="rlbl">Prop</span></button>
+            <button class="rail-btn" data-rt="color" title="Koulè (Color Grading)"><span data-ico="palette"></span><span class="rlbl">Koulè</span></button>
+      <button class="rail-btn" data-rt="blend" title="Blend (Mòd melanj & Opasite)"><span data-ico="blend"></span><span class="rlbl">Blend</span></button>
+      <button class="rail-btn" data-rt="sound" title="Son (Odyo & Efè)"><span data-ico="volume"></span><span class="rlbl">Son</span></button>
+      <button class="rail-btn" data-rt="effect" title="Efè (Filters & Efè vizyèl)"><span data-ico="sparkles"></span><span class="rlbl">Efè</span></button>
+      <button class="rail-btn" data-rt="lut" title="LUT (Filtres sinematik)"><span data-ico="lut"></span><span class="rlbl">LUT</span></button>
+      <button class="rail-btn" data-rt="subs" title="Sou-tit (edite tèks / tan / stil)"><span data-ico="text"></span><span class="rlbl">Sou-tit</span></button>
+    </div>
+  </div>
+</div>
+<div class="split h" id="splitT"></div>
+<div id="tl">
+  <div id="tlhdr">
+    <!-- Undo / Redo -->
+    <button class="ico" id="tUndo" title="Undo — Anile (Retounen sou dènye aksyon an) [Ctrl+Z]"><span data-ico="undo"></span></button>
+    <button class="ico" id="tRedo" title="Redo — Refè (Retabli aksyon ou te anile a) [Ctrl+Y]"><span data-ico="redo"></span></button>
+    <span class="sep"></span>
+    
+    <!-- Select / Split / Delete Left / Delete Right / Delete -->
+    <button class="ico on" id="tSelect" title="Select — Seleksyon: Chwazi, deplase ak ajiste clips yo (V)"><span data-ico="pointer"></span></button>
+    <button class="ico" id="tSplit" title="Split — Divize: Koupe clip oswa sèn chwazi a kote tèt lekti a ye (B)"><span data-ico="scissors"></span></button>
+    <button class="ico" id="tDelLeft" title="Delete left — Efase bò gòch: Retire pati clip la ki anvan tèt lekti a ([)"><span data-ico="delleft"></span></button>
+    <button class="ico" id="tDelRight" title="Delete right — Efase bò dwat: Retire pati clip la ki apre tèt lekti a (])"><span data-ico="delright"></span></button>
+    <button class="ico" id="tDelete" title="Delete — Efase: Retire eleman chwazi yo nan timeline lan (Suppr)"><span data-ico="trash"></span></button>
+    <span class="sep"></span>
+    
+    <!-- Freeze / Reverse / Mirror / Rotate / Crop -->
+    <button class="ico" id="tFreeze" title="Freeze — Fikse imaj: Kreye yon imaj fiks nan moman videyo ou chwazi a"><span data-ico="freeze"></span></button>
+    <button class="ico" id="tReverse" title="Reverse — Ranvèse: Fè videyo a jwe alanvè"><span data-ico="reverse"></span></button>
+    <button class="ico" id="tMirror" title="Mirror — Reflete: Vire imaj la orizontalman, tankou yon miwa"><span data-ico="mirror"></span></button>
+    <button class="ico" id="tRotate" title="Rotate — Wotasyon: Chanje oryantasyon imaj la (+90°)"><span data-ico="rotate"></span></button>
+    <button class="ico" id="tCrop" title="Crop — Rekadre: Koupe rebò imaj la epi ajiste kad li"><span data-ico="crop"></span></button>
+    <span class="sep"></span>
+
+    <!-- Voice Recording -->
+    <button class="ico" id="tRecord" title="Record voice-over — Anrejistre vwa: Anrejistre yon kòmantè odyo dirèkteman nan montaj la"><span data-ico="record"></span></button>
+    
+    <!-- Add Track -->
+    <button id="tAddTrack" title="Ajoute yon track (Videyo, Odyo, SFX, Imaj, Tèks, Asset)"><span data-ico="plus"></span>Add Track</button>
+    <span class="sep"></span>
+
+    <!-- Magnet / Snapping / Linkage / Scrubbing -->
+    <button class="ico on" id="tMainMagnet" title="Main track magnet — Leman piste prensipal: Ede kenbe clips piste prensipal la kole san espas"><span data-ico="magnet"></span></button>
+    <button class="ico on" id="tSnap" title="Snapping — Aimantation: Ede bor clips yo aliyen ak lòt clips oswa tèt lekti a"><span data-ico="diamond"></span></button>
+    <button class="ico on" id="tLinkage" title="Linkage — Lyezon: Fè eleman ki asosye yo suiv deplasman nan montaj la"><span data-ico="link"></span></button>
+    <button class="ico on" id="tScrubAudio" title="Preview audio while scrubbing: Fè w tande son pandan w ap glise tèt lekti a"><span data-ico="scrub"></span></button>
+    <span class="sep"></span>
+    <button id="tEditMode" title="Mòd montaj clip: Overwrite = mete clip la epi koupe sa ki anba li; Insert = antre clip la epi pouse lòt clips yo adwat">Overwrite</button>
+
+    <span style="flex:1"></span>
+    
+    <!-- Zoom / Fit -->
+    <button class="ico" id="tZoomMedia" title="Zoom sou medya: Zoom dirèkteman sou clip chwazi a (oswa Double-klike)"><span data-ico="zoomin"></span></button>
+    <button class="ico" id="tFit" title="Fit timeline — Ajiste afichaj: Mete tout longè montaj la vizib nan espas timeline lan"><span data-ico="fit"></span></button>
+    <button class="ico" id="tZoomOut" title="Zoom −: Redui echèl tan an"><span data-ico="zoomout"></span></button>
+    <button class="ico" id="tZoomIn" title="Zoom +: Agrandi echèl tan an pou travay pi presi"><span data-ico="zoomin"></span></button>
+  </div>
+  <div id="tlwrap">
+    <div id="tlnames"><div style="height:22px;border-bottom:1px solid var(--line)"></div><div id="names"></div></div>
+    <div id="tlscrollwrap"><div id="tlinner">
+      <div id="ruler"></div><div id="tracks"></div><div id="playhead"></div>
+    </div></div>
+    <div id="tlmeter">
+      <div class="mlabel">MASTER</div>
+      <div class="meter-fader-body">
+        <div class="meter"><div class="mcol"><i id="meterL"></i></div><div class="mcol"><i id="meterR"></i></div><div class="mdb"><span>0</span><span>-6</span><span>-18</span><span>-40</span></div></div>
+        <div class="fader-col">
+          <div class="fader-track" id="volTrack" title="Glise monte/desann pou regle volim (0% - 200%) • Woulèt sourit oswa Double-click pou 100%">
+            <div class="fader-fill" id="volFill"></div>
+            <div class="fader-unity" title="100% Normal"></div>
+            <div class="fader-thumb" id="volThumb"></div>
+          </div>
+        </div>
+      </div>
+      <div class="volctl">
+        <button class="ico" id="volMute" title="Koupe / Retabli son (Mute)"><span class="volic" id="volIcon" data-ico="volume"></span></button>
+        <div id="volval" title="Double-click pou retounen 100%">100%</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Menus Flotan (deyo overflow:hidden pou yo toujou ouvri kle) -->
+<div class="menu" id="projmenu"></div>
+<div class="menu" id="trackmenu">
+  <div class="mi" data-tk="video"><span data-ico="film"></span>Track Video</div>
+  <div class="mi" data-tk="audio"><span data-ico="music"></span>Track Audio</div>
+  <div class="mi" data-tk="sfx"><span data-ico="volume"></span>Track SFX (Efè son)</div>
+  <div class="mi" data-tk="image"><span data-ico="image"></span>Track Imaj</div>
+  <div class="mi" data-tk="text"><span data-ico="text"></span>Track Teks</div>
+  <div class="mi" data-tk="asset"><span data-ico="layers"></span>Track Asset</div>
+</div>
+<!-- Modal Rann MP4 Kadans -->
+<div id="renderModal" style="display:none;position:fixed;inset:0;background:rgba(8,5,18,0.85);backdrop-filter:blur(6px);z-index:99999;align-items:center;justify-content:center">
+  <div style="background:#160f29;border:1px solid #4c268f;border-radius:14px;padding:24px 28px;width:90%;max-width:520px;box-shadow:0 20px 50px rgba(0,0,0,0.7);display:flex;flex-direction:column;gap:16px;color:#fff;font-family:system-ui,sans-serif">
+    <div style="display:flex;align-items:center;justify-content:space-between">
+      <div style="display:flex;align-items:center;gap:10px;font-size:16px;font-weight:800;color:#c4b5fd">
+        <span data-ico="film" style="color:#8b5cf6"></span>
+        <span id="rmTitle">Rann Videyo MP4</span>
+      </div>
+      <button id="rmCloseX" class="ico" style="background:transparent;border:0;color:#94a3b8;cursor:pointer;font-size:18px;line-height:1">✕</button>
+    </div>
+    
+    <div id="rmMeta" style="font-size:12.5px;color:#a78bfa;background:#0d091a;padding:8px 12px;border-radius:8px;border:1px solid #2e1d52;display:flex;justify-content:space-between">
+      <span id="rmProjName">-</span>
+      <span id="rmSpecs">1080p • 30 fps</span>
+    </div>
+
+    <!-- Progress Bar Container -->
+    <div style="display:flex;flex-direction:column;gap:6px">
+      <div style="display:flex;justify-content:space-between;font-size:12px;font-weight:700">
+        <span id="rmStageTxt" style="color:#c4b5fd">Ap prepare rann lan...</span>
+        <span id="rmPctTxt" style="color:#a78bfa">0%</span>
+      </div>
+      <div style="width:100%;height:12px;background:#0d091a;border-radius:999px;border:1px solid #3d226e;overflow:hidden;position:relative">
+        <div id="rmBar" style="width:0%;height:100%;background:linear-gradient(90deg,#8b5cf6,#0098ff,#22c55e);transition:width 0.25s ease;border-radius:999px"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;font-size:11.5px;color:#94a3b8;min-height:16px">
+        <span id="rmDetail">Inisyalizasyon...</span>
+        <span id="rmTimer" style="color:#c4b5fd;font-weight:700;font-variant-numeric:tabular-nums;display:inline-flex;align-items:center;gap:4px">00:00</span>
+      </div>
+    </div>
+
+    <!-- Rezilta / Preview lè li fini -->
+    <div id="rmDoneBox" style="display:none;background:#0f172a;border:1px solid #1e293b;border-radius:10px;padding:12px;flex-direction:column;gap:10px">
+      <div style="display:flex;align-items:center;gap:8px;color:#4ade80;font-weight:700;font-size:13px">
+        <span>✓</span> <span>Videyo MP4 ekspòte avèk siksè!</span>
+      </div>
+      <video id="rmVideoPreview" controls playsinline preload="auto" style="display:none;width:100%;max-height:200px;border-radius:6px;background:#000"></video>
+      <!-- Kote fichye a ye a: chemen konplè + bouton pou louvri dosye a ak fichye a deja chwazi -->
+      <div id="rmFileRow" style="display:none;flex-direction:column;gap:6px;background:#0b1222;border:1px solid #1e293b;border-radius:8px;padding:8px 10px">
+        <div style="font-size:11px;color:#94a3b8;font-weight:600">Fichye videyo a:</div>
+        <div id="rmFilePath" title="Chemen konplè fichye MP4 la" style="font-family:Consolas,monospace;font-size:11px;color:#e2e8f0;word-break:break-all;user-select:text"></div>
+        <div id="rmWorkspacePath" title="Chemen nan rasin workspace la" style="display:none;font-family:Consolas,monospace;font-size:11px;color:#38bdf8;word-break:break-all;user-select:text"></div>
+        <div id="rmFileInfo" style="font-size:11px;color:#64748b"></div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <button id="rmBtnReveal" style="background:#1e3a8a;border-color:#3b82f6;color:#fff;padding:6px 12px;border-radius:8px;font-weight:700">📂 Ouvri kote fichye a ye a</button>
+          <button id="rmBtnCopyPath" style="background:#261845;border-color:#4c268f;color:#e2e8f0;padding:6px 12px;border-radius:8px">📋 Kopye chemen an</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Erè si genyen -->
+    <div id="rmErrorBox" style="display:none;background:#3b1016;border:1px solid #7f1d1d;border-radius:8px;padding:10px 12px;color:#fca5a5;font-size:12px"></div>
+
+    <!-- Bouton aksyon yo -->
+    <div style="display:flex;align-items:center;justify-content:flex-end;gap:10px;margin-top:6px">
+      <button id="rmBtnCancel" style="background:#261845;border-color:#4c268f;color:#e2e8f0;padding:7px 14px;border-radius:8px">Kanpe</button>
+      <button id="rmBtnDownload" class="pri" style="display:none;background:#15803d;border-color:#22c55e;color:#fff;padding:7px 16px;border-radius:8px;font-weight:700">Telechaje MP4</button>
+      <button id="rmBtnClose" class="pri" style="display:none;padding:7px 16px;border-radius:8px">Fèmen</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Remotion On-Demand -->
+<div id="remotionModal" style="display:none;position:fixed;inset:0;background:rgba(8,5,18,0.85);backdrop-filter:blur(6px);z-index:99999;align-items:center;justify-content:center">
+  <div style="background:#160f29;border:1px solid #4c268f;border-radius:14px;padding:24px 28px;width:90%;max-width:520px;box-shadow:0 20px 50px rgba(0,0,0,0.7);display:flex;flex-direction:column;gap:16px;color:#fff;font-family:system-ui,sans-serif">
+    <div style="display:flex;align-items:center;justify-content:space-between">
+      <div style="display:flex;align-items:center;gap:10px;font-size:16px;font-weight:800;color:#c4b5fd">
+        <span data-ico="film" style="color:#8b5cf6"></span>
+        <span id="remTitle">Motè Remotion Studio (Zero-Bloat)</span>
+      </div>
+      <button id="remCloseX" class="ico" style="background:transparent;border:0;color:#94a3b8;cursor:pointer;font-size:18px;line-height:1">✕</button>
+    </div>
+    
+    <div id="remBodyText" style="font-size:13px;color:#cbd5e1;line-height:1.5">
+      Remotion pèmèt ou jwenn yon preview an tan reyèl ak rann videyo a avèk tout akselerasyon GPU Microsoft Edge / Chromium.
+      <div style="margin-top:10px;padding:10px;background:#0d091a;border:1px solid #3d226e;border-radius:8px;font-size:12px;color:#a78bfa">
+        ✦ <b>Prensip Zero-Bloat :</b> Remotion pa chaje WASDEV; li enstale yon sèl fwa nan kach zouti lokal ou a epi li sèvi ak menm spec.json Kadans lan.
+      </div>
+    </div>
+
+    <!-- Progress / Install Status -->
+    <div id="remProgressWrap" style="display:none;flex-direction:column;gap:6px">
+      <div style="display:flex;justify-content:space-between;font-size:12px;font-weight:700">
+        <span id="remStatusTxt" style="color:#c4b5fd">⏳ Ap enstale Remotion sou PC a…</span>
+      </div>
+      <div style="width:100%;height:10px;background:#0d091a;border-radius:999px;border:1px solid #3d226e;overflow:hidden;position:relative">
+        <div id="remBar" style="width:100%;height:100%;background:linear-gradient(90deg,#8b5cf6,#0098ff,#a78bfa);border-radius:999px"></div>
+      </div>
+    </div>
+
+    <div id="remBtnRow" style="display:flex;justify-content:flex-end;gap:10px;margin-top:8px">
+      <button id="remBtnCancel" style="background:#271c3d;color:#cbd5e1;border:1px solid #4c268f;border-radius:8px;padding:8px 16px;cursor:pointer;font-weight:600">Annile</button>
+      <button id="remBtnInstall" class="pri" style="background:#8b5cf6;color:#fff;border:0;border-radius:8px;padding:8px 18px;cursor:pointer;font-weight:700">✦ Enstale kounye a</button>
+    </div>
+  </div>
+</div>
+<script src="kadans_phrases.js"></script>
+<script src="kadans_phrases2.js"></script>
+<script src="kadans_phrases3.js"></script>
+<script src="kadans_phrases4.js"></script>
+<script src="kadans_phrases5.js"></script>
+<script src="kadans_phrases6.js"></script>
+<script src="kadans_i18n.js"></script>
+<script src="editor.js"></script>
+<script src="media_panel.js"></script>
+<script src="camera_fx_panel.js"></script>
+<script src="ai_montage.js"></script>
+</body></html>

@@ -1,0 +1,23 @@
+services:
+  kadans-server:
+    build: .
+    container_name: kadans-cloud-engine
+    ports:
+      - "8080:8080"
+    environment:
+      - KADANS_WORKERS=4
+      - ELEVENLABS_API_KEY=${ELEVENLABS_API_KEY}
+    volumes:
+      - ./render_output:/app/output
+      - ./projects:/app/projects
+    restart: unless-stopped
+
+  kadans-cli:
+    build: .
+    profiles: ["cli"]
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    environment:
+      - KADANS_WORKERS=4
+      - ELEVENLABS_API_KEY=${ELEVENLABS_API_KEY}

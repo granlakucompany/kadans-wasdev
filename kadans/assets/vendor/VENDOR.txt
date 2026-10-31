@@ -1,0 +1,11 @@
+# Bibliyotèk animasyon vandorize (bundled lokal) — KADANS WASDEV VIDEO ENGINE
+# Tout MIT (konpatib ak itilizasyon komèsyal + redistribisyon). Chaje LOKAL, pa CDN (100% lokal).
+#
+# anime.min.js       animejs 3.2.1        MIT   https://github.com/juliangarnier/anime
+# chart.umd.min.js   Chart.js 4.4.1       MIT   https://github.com/chartjs/Chart.js
+# lottie.min.js      lottie-web 5.12.2    MIT   https://github.com/airbnb/lottie-web
+# three.min.js       three.js 0.160.0     MIT   https://github.com/mrdoob/three.js
+# motion.min.js      motion 10.18.0       MIT   https://github.com/motiondivision/motion
+# gsap.min.js        GSAP 3.12.5          GreenSock Standard License  https://greensock.com
+#
+# Non global JS: anime / Chart / lottie / THREE / Motion / gsap

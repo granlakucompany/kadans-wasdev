@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kadans-wasdev"
+version = "0.6.0"
+description = "Kadans WASDEV: videos written as code. A JSON spec becomes animated HTML scenes, rendered to MP4 by any Chromium + FFmpeg. Built for AI agents."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "LICENSE.txt", "TRADEMARKS.md", "THIRD_PARTY_NOTICES.md"]
+requires-python = ">=3.10"
+authors = [{ name = "Getho Guerrier", email = "wasdevcontact@granlaku.com" }]
+maintainers = [{ name = "GRAN LAKU COMPANY", email = "wasdevsupport@granlaku.com" }]
+keywords = ["video", "motion-graphics", "html", "ffmpeg", "ai-agents", "ads", "wasdev", "kadans"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Topic :: Multimedia :: Video",
+  "Intended Audience :: Developers",
+]
+dependencies = []
+
+[project.optional-dependencies]
+blend = ["numpy>=1.24", "Pillow>=10"]       # the 10 blend modes no browser has (composited by the renderer)
+
+[project.urls]
+Homepage = "https://wasdev.ai"
+Company = "https://granlaku.com"
+Repository = "https://github.com/granlakucompany/kadans-wasdev"
+
+[project.scripts]
+kadans = "kadans.__main__:main"
+
+[tool.setuptools]
+packages = ["kadans"]
+
+[tool.setuptools.package-data]
+kadans = ["assets/*.svg", "assets/vendor/*.js", "assets/vendor/*.txt"]

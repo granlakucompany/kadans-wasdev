@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Questions and ideas (Discussions)
+    url: https://github.com/granlakucompany/kadans-wasdev/discussions
+    about: Ask a question about Kadans WASDEV or share an idea with the community.
+  - name: 🌐 WASDEV IDE — The AI WorkShop
+    url: https://wasdev.ai
+    about: Official website of WASDEV IDE, powered by Kadans Video Engine.
+  - name: 🏢 GRAN LAKU COMPANY
+    url: https://granlaku.com
+    about: Official portal of GRAN LAKU COMPANY.
+  - name: ✉️ Support GRAN LAKU COMPANY
+    url: mailto:wasdevsupport@granlaku.com
+    about: Private questions that should not be posted publicly.

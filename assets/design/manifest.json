@@ -1,0 +1,60 @@
+{
+ "license": "CC0-1.0",
+ "owner": "Gran Laku Company",
+ "designer": "Getho Guerrier",
+ "author": "Getho Guerrier - Gran Laku Company",
+ "generated_by": "tools/make_vectors.py",
+ "sets": {
+  "SHAPES": {
+   "categories": {
+    "01 Separators": 250,
+    "02 Stripes": 250,
+    "03 Broken and torn": 250,
+    "04 Frames": 250,
+    "05 Arrows": 250,
+    "06 Badges": 250,
+    "07 Circles and rings": 250,
+    "08 Polygons and stars": 250,
+    "09 Organic blobs": 250,
+    "10 Wave dividers": 250,
+    "11 Dots and halftones": 250,
+    "12 Speech bubbles": 250,
+    "13 Ribbons and banners": 250,
+    "14 Corners": 250,
+    "15 Underlines and highlights": 250,
+    "16 Geometric patterns": 250,
+    "17 Starbursts": 250,
+    "18 Lines and squiggles": 250,
+    "19 Masks and windows": 250,
+    "20 Hearts and symbols": 250
+   },
+   "total": 5000
+  },
+  "SPLASH": {
+   "categories": {
+    "01 Ink splash": 250,
+    "02 Paint drips": 250,
+    "03 Brush strokes": 250,
+    "04 Watercolour blots": 250,
+    "05 Spray": 250,
+    "06 Burst": 250,
+    "07 Liquid blobs": 250,
+    "08 Grunge stains": 250,
+    "09 Halftone splash": 250,
+    "10 Torn paper": 250,
+    "11 Smoke and clouds": 250,
+    "12 Comic bursts": 250,
+    "13 Rings and stains": 250,
+    "14 Drops": 250,
+    "15 Swooshes": 250,
+    "16 Confetti": 250,
+    "17 Sparkles": 250,
+    "18 Ribbons": 250,
+    "19 Gradient blobs": 250,
+    "20 Scribbles": 250
+   },
+   "total": 5000
+  }
+ },
+ "total": 10000
+}

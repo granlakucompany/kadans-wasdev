@@ -1,0 +1,1501 @@
+{
+ "version": 1,
+ "license": "CC0-1.0",
+ "sounds": [
+  {
+   "id": "bamboo-trumpet",
+   "files": [
+    "bamboo-trumpet.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "vaksin",
+    "bambou",
+    "bamboo",
+    "twonpèt",
+    "trompette",
+    "horn",
+    "rara"
+   ],
+   "dur": 7.0,
+   "title": "Wooden Horn",
+   "author": "Vendarro",
+   "source": "https://freesound.org/people/Vendarro/sounds/329912/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "bell-heavy",
+   "files": [
+    "bell-heavy-1.ogg",
+    "bell-heavy-2.ogg",
+    "bell-heavy-3.ogg",
+    "bell-heavy-4.ogg",
+    "bell-heavy-5.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "klòch",
+    "cloche",
+    "bell"
+   ],
+   "dur": 1.74,
+   "title": "impactBell_heavy_000",
+   "author": "Kenney (kenney.nl)",
+   "source": "https://kenney.nl/assets/impact-sounds",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "birds-morning",
+   "files": [
+    "birds-morning.ogg"
+   ],
+   "kind": "ambience",
+   "loop": true,
+   "tags": [
+    "zwazo",
+    "oiseaux",
+    "birds",
+    "maten",
+    "matin",
+    "morning"
+   ],
+   "dur": 18.33,
+   "title": "bird chirps5.wav",
+   "author": "keweldog",
+   "source": "https://freesound.org/people/keweldog/sounds/184870/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "book-close",
+   "files": [
+    "book-close.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "liv",
+    "livre",
+    "book",
+    "fèmen",
+    "fermer",
+    "close",
+    "kaye",
+    "cahier"
+   ],
+   "dur": 0.23,
+   "title": "bookClose",
+   "author": "Kenney (kenney.nl)",
+   "source": "https://kenney.nl/assets/rpg-audio",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "book-flip",
+   "files": [
+    "book-flip-1.ogg",
+    "book-flip-2.ogg",
+    "book-flip-3.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "paj",
+    "page",
+    "liv",
+    "livre",
+    "book",
+    "kaye",
+    "cahier"
+   ],
+   "dur": 0.69,
+   "title": "bookFlip1",
+   "author": "Kenney (kenney.nl)",
+   "source": "https://kenney.nl/assets/rpg-audio",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "book-open",
+   "files": [
+    "book-open.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "liv",
+    "livre",
+    "book",
+    "louvri",
+    "ouvrir",
+    "open",
+    "kaye",
+    "cahier"
+   ],
+   "dur": 0.15,
+   "title": "bookOpen",
+   "author": "Kenney (kenney.nl)",
+   "source": "https://kenney.nl/assets/rpg-audio",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "bus-engine",
+   "files": [
+    "bus-engine.ogg"
+   ],
+   "kind": "ambience",
+   "loop": true,
+   "tags": [
+    "taptap",
+    "tap-tap",
+    "bis",
+    "bus",
+    "kamyon",
+    "moto",
+    "motè",
+    "moteur",
+    "engine"
+   ],
+   "dur": 14.38,
+   "title": "Diesel bus pulling away",
+   "author": "pnwheeler",
+   "source": "https://freesound.org/people/pnwheeler/sounds/831721/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "candle-blow",
+   "files": [
+    "candle-blow.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "bouji",
+    "bougie",
+    "candle",
+    "soufle",
+    "souffle",
+    "blow"
+   ],
+   "dur": 0.56,
+   "title": "blowing out candle.wav",
+   "author": "Reitanna",
+   "source": "https://freesound.org/people/Reitanna/sounds/242867/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "cartoon-boing",
+   "files": [
+    "cartoon-boing.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "boing",
+    "resò",
+    "ressort",
+    "spring"
+   ],
+   "dur": 2.12,
+   "title": "Cartoon Boing.wav",
+   "author": "reelworldstudio",
+   "source": "https://freesound.org/people/reelworldstudio/sounds/161122/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "cartoon-pop",
+   "files": [
+    "cartoon-pop.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "pop",
+    "dessin",
+    "cartoon"
+   ],
+   "dur": 0.17,
+   "title": "Cartoon Pop (Distorted)",
+   "author": "unfa",
+   "source": "https://freesound.org/people/unfa/sounds/245646/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "children-playing",
+   "files": [
+    "children-playing.ogg"
+   ],
+   "kind": "ambience",
+   "loop": true,
+   "tags": [
+    "timoun",
+    "enfants",
+    "children",
+    "jwe",
+    "jouer",
+    "play"
+   ],
+   "dur": 37.18,
+   "title": "children playing",
+   "author": "goldkelchen",
+   "source": "https://freesound.org/people/goldkelchen/sounds/371377/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "church-bell",
+   "files": [
+    "church-bell.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "klòch",
+    "cloche",
+    "bell",
+    "legliz",
+    "église",
+    "church"
+   ],
+   "dur": 4.44,
+   "title": "Old Church Bell.wav",
+   "author": "dsp9000",
+   "source": "https://freesound.org/people/dsp9000/sounds/76405/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "clock-tick",
+   "files": [
+    "clock-tick.ogg"
+   ],
+   "kind": "ambience",
+   "loop": true,
+   "tags": [
+    "revèy",
+    "horloge",
+    "clock",
+    "tik",
+    "tac",
+    "tick"
+   ],
+   "dur": 25.41,
+   "title": "Clock ticking",
+   "author": "Mortifreshman",
+   "source": "https://freesound.org/people/Mortifreshman/sounds/237210/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "cloth",
+   "files": [
+    "cloth-1.ogg",
+    "cloth-2.ogg",
+    "cloth-3.ogg",
+    "cloth-4.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "twal",
+    "tissu",
+    "cloth",
+    "rad",
+    "vêtement"
+   ],
+   "dur": 0.64,
+   "title": "cloth1",
+   "author": "Kenney (kenney.nl)",
+   "source": "https://kenney.nl/assets/rpg-audio",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "coins",
+   "files": [
+    "coins-1.ogg",
+    "coins-2.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "lajan",
+    "argent",
+    "money",
+    "pyès",
+    "pièces",
+    "coins"
+   ],
+   "dur": 0.79,
+   "title": "handleCoins",
+   "author": "Kenney (kenney.nl)",
+   "source": "https://kenney.nl/assets/rpg-audio",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "conch-shell",
+   "files": [
+    "conch-shell.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "lanbi",
+    "conque",
+    "conch",
+    "kòn",
+    "corne",
+    "horn"
+   ],
+   "dur": 12.36,
+   "title": "R12-46-Blowing Note on Cow Horn.wav",
+   "author": "craigsmith",
+   "source": "https://freesound.org/people/craigsmith/sounds/479998/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "crickets-night",
+   "files": [
+    "crickets-night.ogg"
+   ],
+   "kind": "ambience",
+   "loop": true,
+   "tags": [
+    "krikèt",
+    "grillons",
+    "crickets",
+    "nwit",
+    "nuit",
+    "night"
+   ],
+   "dur": 14.08,
+   "title": "crickets",
+   "author": "FreethinkerAnon",
+   "source": "https://freesound.org/people/FreethinkerAnon/sounds/129678/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "crowd-applause",
+   "files": [
+    "crowd-applause.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "bat",
+    "bravo",
+    "applaudissements",
+    "applause"
+   ],
+   "dur": 8.39,
+   "title": "cheering and clapping crowd 2",
+   "author": "AlaskaRobotics",
+   "source": "https://freesound.org/people/AlaskaRobotics/sounds/221567/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "crowd-cheer",
+   "files": [
+    "crowd-cheer.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "foul",
+    "foule",
+    "crowd",
+    "kontan",
+    "joie",
+    "cheer"
+   ],
+   "dur": 19.26,
+   "title": "RoaringCrowd.wav",
+   "author": "benfree",
+   "source": "https://freesound.org/people/benfree/sounds/130568/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "dog-bark-distant",
+   "files": [
+    "dog-bark-distant.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "chen",
+    "chien",
+    "dog",
+    "jape",
+    "aboie",
+    "bark",
+    "lwen",
+    "loin"
+   ],
+   "dur": 10.26,
+   "title": "distant_dog.wav",
+   "author": "Heigh-hoo",
+   "source": "https://freesound.org/people/Heigh-hoo/sounds/54545/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "dominoes",
+   "files": [
+    "dominoes.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "domino",
+    "dominos",
+    "dominoes",
+    "jwe",
+    "jouer"
+   ],
+   "dur": 9.74,
+   "title": "domino stone on the table.WAV",
+   "author": "Millavsb",
+   "source": "https://freesound.org/people/Millavsb/sounds/197867/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "door-close",
+   "files": [
+    "door-close-1.ogg",
+    "door-close-2.ogg",
+    "door-close-3.ogg",
+    "door-close-4.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "pòt",
+    "porte",
+    "door",
+    "fèmen",
+    "fermer",
+    "close"
+   ],
+   "dur": 0.71,
+   "title": "doorClose_1",
+   "author": "Kenney (kenney.nl)",
+   "source": "https://kenney.nl/assets/rpg-audio",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "door-creak",
+   "files": [
+    "door-creak-1.ogg",
+    "door-creak-2.ogg",
+    "door-creak-3.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "pòt",
+    "porte",
+    "door",
+    "krake",
+    "grince",
+    "creak"
+   ],
+   "dur": 0.82,
+   "title": "creak1",
+   "author": "Kenney (kenney.nl)",
+   "source": "https://kenney.nl/assets/rpg-audio",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "door-knock",
+   "files": [
+    "door-knock.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "frape",
+    "frapper",
+    "knock",
+    "pòt",
+    "porte",
+    "door"
+   ],
+   "dur": 2.06,
+   "title": "door_knock.wav",
+   "author": "wjtaylor",
+   "source": "https://freesound.org/people/wjtaylor/sounds/268500/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "door-open",
+   "files": [
+    "door-open-1.ogg",
+    "door-open-2.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "pòt",
+    "porte",
+    "door",
+    "louvri",
+    "ouvrir",
+    "open"
+   ],
+   "dur": 1.41,
+   "title": "doorOpen_1",
+   "author": "Kenney (kenney.nl)",
+   "source": "https://kenney.nl/assets/rpg-audio",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "drum-rara",
+   "files": [
+    "drum-rara.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "tanbou",
+    "tambour",
+    "drum",
+    "hand",
+    "main"
+   ],
+   "dur": 15.64,
+   "title": "Maybe Indian Hand Drum 44.1kHz",
+   "author": "qubodup",
+   "source": "https://freesound.org/people/qubodup/sounds/60056/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "fire-crackle",
+   "files": [
+    "fire-crackle.ogg"
+   ],
+   "kind": "ambience",
+   "loop": true,
+   "tags": [
+    "dife",
+    "feu",
+    "fire",
+    "bouji",
+    "bougie",
+    "candle"
+   ],
+   "dur": 19.53,
+   "title": "Fire Crackle and Flames 002",
+   "author": "TheWoodlandNomad",
+   "source": "https://freesound.org/people/TheWoodlandNomad/sounds/363092/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "footstep-carpet",
+   "files": [
+    "footstep-carpet-1.ogg",
+    "footstep-carpet-2.ogg",
+    "footstep-carpet-3.ogg",
+    "footstep-carpet-4.ogg",
+    "footstep-carpet-5.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "pa",
+    "pas",
+    "footstep",
+    "steps",
+    "mache",
+    "marcher",
+    "walk",
+    "tapi",
+    "tapis",
+    "carpet"
+   ],
+   "dur": 0.17,
+   "title": "footstep_carpet_000",
+   "author": "Kenney (kenney.nl)",
+   "source": "https://kenney.nl/assets/impact-sounds",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "footstep-concrete",
+   "files": [
+    "footstep-concrete-1.ogg",
+    "footstep-concrete-2.ogg",
+    "footstep-concrete-3.ogg",
+    "footstep-concrete-4.ogg",
+    "footstep-concrete-5.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "pa",
+    "pas",
+    "footstep",
+    "steps",
+    "mache",
+    "marcher",
+    "walk",
+    "beton",
+    "béton",
+    "concrete"
+   ],
+   "dur": 0.11,
+   "title": "footstep_concrete_000",
+   "author": "Kenney (kenney.nl)",
+   "source": "https://kenney.nl/assets/impact-sounds",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "footstep-grass",
+   "files": [
+    "footstep-grass-1.ogg",
+    "footstep-grass-2.ogg",
+    "footstep-grass-3.ogg",
+    "footstep-grass-4.ogg",
+    "footstep-grass-5.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "pa",
+    "pas",
+    "footstep",
+    "steps",
+    "mache",
+    "marcher",
+    "walk",
+    "zèb",
+    "herbe",
+    "grass"
+   ],
+   "dur": 0.77,
+   "title": "footstep_grass_000",
+   "author": "Kenney (kenney.nl)",
+   "source": "https://kenney.nl/assets/impact-sounds",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "footstep-snow",
+   "files": [
+    "footstep-snow-1.ogg",
+    "footstep-snow-2.ogg",
+    "footstep-snow-3.ogg",
+    "footstep-snow-4.ogg",
+    "footstep-snow-5.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "pa",
+    "pas",
+    "footstep",
+    "steps",
+    "mache",
+    "marcher",
+    "walk",
+    "nèj",
+    "neige",
+    "snow"
+   ],
+   "dur": 0.37,
+   "title": "footstep_snow_000",
+   "author": "Kenney (kenney.nl)",
+   "source": "https://kenney.nl/assets/impact-sounds",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "footstep-soft",
+   "files": [
+    "footstep-soft-1.ogg",
+    "footstep-soft-2.ogg",
+    "footstep-soft-3.ogg",
+    "footstep-soft-4.ogg",
+    "footstep-soft-5.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "pa",
+    "pas",
+    "footstep",
+    "steps",
+    "mache",
+    "marcher",
+    "walk",
+    "tè",
+    "terre",
+    "dirt"
+   ],
+   "dur": 0.29,
+   "title": "footstep00",
+   "author": "Kenney (kenney.nl)",
+   "source": "https://kenney.nl/assets/rpg-audio",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "footstep-wood",
+   "files": [
+    "footstep-wood-1.ogg",
+    "footstep-wood-2.ogg",
+    "footstep-wood-3.ogg",
+    "footstep-wood-4.ogg",
+    "footstep-wood-5.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "pa",
+    "pas",
+    "footstep",
+    "steps",
+    "mache",
+    "marcher",
+    "walk",
+    "bwa",
+    "bois",
+    "wood",
+    "planche"
+   ],
+   "dur": 0.27,
+   "title": "footstep_wood_000",
+   "author": "Kenney (kenney.nl)",
+   "source": "https://kenney.nl/assets/impact-sounds",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "frogs-night",
+   "files": [
+    "frogs-night.ogg"
+   ],
+   "kind": "ambience",
+   "loop": true,
+   "tags": [
+    "krapo",
+    "grenouilles",
+    "frogs",
+    "nwit",
+    "nuit",
+    "night"
+   ],
+   "dur": 58.5,
+   "title": "FrogsAndCrickets_ExcerptB_JMA_24Bit_48k.wav",
+   "author": "greysound",
+   "source": "https://freesound.org/people/greysound/sounds/32655/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "gasp-surprise",
+   "files": [
+    "gasp-surprise.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "sezi",
+    "surpris",
+    "gasp",
+    "surprise"
+   ],
+   "dur": 0.98,
+   "title": "Whimper_Gasp_1_Female",
+   "author": "Drkvixn91",
+   "source": "https://freesound.org/people/Drkvixn91/sounds/318078/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "goat",
+   "files": [
+    "goat.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "kabrit",
+    "chèvre",
+    "goat"
+   ],
+   "dur": 3.65,
+   "title": "Single Goat Bleating 2x",
+   "author": "Kinoton",
+   "source": "https://freesound.org/people/Kinoton/sounds/581240/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "heartbeat",
+   "files": [
+    "heartbeat.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "kè",
+    "cœur",
+    "heart",
+    "bat",
+    "battement",
+    "beat"
+   ],
+   "dur": 3.61,
+   "title": "Four Heartbeats HQ_BeatSmith.wav",
+   "author": "Lunardrive",
+   "source": "https://freesound.org/people/Lunardrive/sounds/22416/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "impact-glass",
+   "files": [
+    "impact-glass-1.ogg",
+    "impact-glass-2.ogg",
+    "impact-glass-3.ogg",
+    "impact-glass-4.ogg",
+    "impact-glass-5.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "vè",
+    "verre",
+    "glass",
+    "frape",
+    "choc",
+    "impact"
+   ],
+   "dur": 0.23,
+   "title": "impactGlass_light_000",
+   "author": "Kenney (kenney.nl)",
+   "source": "https://kenney.nl/assets/impact-sounds",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "impact-metal",
+   "files": [
+    "impact-metal-1.ogg",
+    "impact-metal-2.ogg",
+    "impact-metal-3.ogg",
+    "impact-metal-4.ogg",
+    "impact-metal-5.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "metal",
+    "tòl",
+    "tôle",
+    "frape",
+    "choc",
+    "impact"
+   ],
+   "dur": 0.48,
+   "title": "impactMetal_light_000",
+   "author": "Kenney (kenney.nl)",
+   "source": "https://kenney.nl/assets/impact-sounds",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "impact-soft",
+   "files": [
+    "impact-soft-1.ogg",
+    "impact-soft-2.ogg",
+    "impact-soft-3.ogg",
+    "impact-soft-4.ogg",
+    "impact-soft-5.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "tonbe",
+    "tomber",
+    "thud",
+    "frape",
+    "choc",
+    "impact"
+   ],
+   "dur": 0.16,
+   "title": "impactGeneric_light_000",
+   "author": "Kenney (kenney.nl)",
+   "source": "https://kenney.nl/assets/impact-sounds",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "impact-wood",
+   "files": [
+    "impact-wood-1.ogg",
+    "impact-wood-2.ogg",
+    "impact-wood-3.ogg",
+    "impact-wood-4.ogg",
+    "impact-wood-5.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "bwa",
+    "bois",
+    "wood",
+    "frape",
+    "choc",
+    "impact"
+   ],
+   "dur": 0.78,
+   "title": "impactPlank_medium_000",
+   "author": "Kenney (kenney.nl)",
+   "source": "https://kenney.nl/assets/impact-sounds",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "jump-land",
+   "files": [
+    "jump-land.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "sote",
+    "sauter",
+    "jump",
+    "ateri",
+    "atterrir",
+    "land"
+   ],
+   "dur": 1.53,
+   "title": "jump.wav",
+   "author": "pcmac",
+   "source": "https://freesound.org/people/pcmac/sounds/464527/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "kiss-cheek",
+   "files": [
+    "kiss-cheek.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "bo",
+    "bisou",
+    "kiss"
+   ],
+   "dur": 1.36,
+   "title": "Cartoon Kiss_cjohnstone.wav",
+   "author": "trijohnstone",
+   "source": "https://freesound.org/people/trijohnstone/sounds/536335/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "light-switch",
+   "files": [
+    "light-switch.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "switch",
+    "entèriptè",
+    "interrupteur",
+    "limyè",
+    "lumière"
+   ],
+   "dur": 0.22,
+   "title": "Light Switch Turn Off Sound",
+   "author": "ChrisTutorials",
+   "source": "https://freesound.org/people/ChrisTutorials/sounds/440499/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "machete",
+   "files": [
+    "machete.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "manchèt",
+    "machette",
+    "machete",
+    "koupe",
+    "couper"
+   ],
+   "dur": 1.0,
+   "title": "MacheteSharping-TwoTimes.wav",
+   "author": "T.42",
+   "source": "https://freesound.org/people/T.42/sounds/191940/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "magic-sparkle",
+   "files": [
+    "magic-sparkle.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "majik",
+    "magie",
+    "magic",
+    "zetensèl",
+    "étincelle",
+    "sparkle"
+   ],
+   "dur": 4.05,
+   "title": "GLEAM-GLOW-SFX-CHIME.wav",
+   "author": "newagesoup",
+   "source": "https://freesound.org/people/newagesoup/sounds/351408/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "metal-latch",
+   "files": [
+    "metal-latch.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "takèt",
+    "loquet",
+    "latch",
+    "metal",
+    "pòt",
+    "porte"
+   ],
+   "dur": 0.26,
+   "title": "metalLatch",
+   "author": "Kenney (kenney.nl)",
+   "source": "https://kenney.nl/assets/rpg-audio",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "motorcycle-pass",
+   "files": [
+    "motorcycle-pass.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "moto",
+    "motorcycle",
+    "pase",
+    "passe"
+   ],
+   "dur": 15.84,
+   "title": "Motorbike Passing By",
+   "author": "JPBILLINGSLEYJR",
+   "source": "https://freesound.org/people/JPBILLINGSLEYJR/sounds/484486/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "night-tropical",
+   "files": [
+    "night-tropical.ogg"
+   ],
+   "kind": "ambience",
+   "loop": true,
+   "tags": [
+    "nwit",
+    "nuit",
+    "night",
+    "twopikal",
+    "tropical"
+   ],
+   "dur": 58.5,
+   "title": "Tropical Ambience Night Ecuador.wav",
+   "author": "pmoss2",
+   "source": "https://freesound.org/people/pmoss2/sounds/516157/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "ocean-waves",
+   "files": [
+    "ocean-waves.ogg"
+   ],
+   "kind": "ambience",
+   "loop": true,
+   "tags": [
+    "lanmè",
+    "mer",
+    "vagues",
+    "waves",
+    "plaj",
+    "plage",
+    "beach"
+   ],
+   "dur": 58.5,
+   "title": "Ocean Waves.wav",
+   "author": "Noted451",
+   "source": "https://freesound.org/people/Noted451/sounds/531015/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "paint-brush",
+   "files": [
+    "paint-brush.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "penso",
+    "pinceau",
+    "brush",
+    "penti",
+    "peinture",
+    "paint"
+   ],
+   "dur": 4.87,
+   "title": "normal paint strokes_1-2.aif",
+   "author": "acrober",
+   "source": "https://freesound.org/people/acrober/sounds/86113/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "paper-rustle",
+   "files": [
+    "paper-rustle.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "papye",
+    "papier",
+    "paper"
+   ],
+   "dur": 4.39,
+   "title": "rustling paper.wav",
+   "author": "keweldog",
+   "source": "https://freesound.org/people/keweldog/sounds/181774/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "pencil-drawing",
+   "files": [
+    "pencil-drawing.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "kreyon",
+    "crayon",
+    "pencil",
+    "desen",
+    "dessin",
+    "draw"
+   ],
+   "dur": 17.12,
+   "title": "Writing On Paper.wav",
+   "author": "rivernile7",
+   "source": "https://freesound.org/people/rivernile7/sounds/234016/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "power-on-hum",
+   "files": [
+    "power-on-hum.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "kouran",
+    "courant",
+    "electricity",
+    "limyè",
+    "lumière",
+    "on",
+    "hum",
+    "fliyoresan",
+    "neon"
+   ],
+   "dur": 15.0,
+   "title": "Lights Flicker On.wav",
+   "author": "mmaruska",
+   "source": "https://freesound.org/people/mmaruska/sounds/232447/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "rain-light",
+   "files": [
+    "rain-light.ogg"
+   ],
+   "kind": "ambience",
+   "loop": true,
+   "tags": [
+    "lapli",
+    "pluie",
+    "rain"
+   ],
+   "dur": 58.5,
+   "title": "Rain light 2 (rural)",
+   "author": "jmbphilmes",
+   "source": "https://freesound.org/people/jmbphilmes/sounds/200273/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "rain-tin-roof",
+   "files": [
+    "rain-tin-roof.ogg"
+   ],
+   "kind": "ambience",
+   "loop": true,
+   "tags": [
+    "lapli",
+    "pluie",
+    "rain",
+    "tòl",
+    "tôle",
+    "twati",
+    "toit",
+    "roof"
+   ],
+   "dur": 58.5,
+   "title": "Rain on Shed Roof",
+   "author": "timothyd4y",
+   "source": "https://freesound.org/people/timothyd4y/sounds/527499/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "rara-band",
+   "files": [
+    "rara-band.ogg"
+   ],
+   "kind": "ambience",
+   "loop": true,
+   "tags": [
+    "rara",
+    "kanaval",
+    "carnaval",
+    "tanbou",
+    "tambour",
+    "drums",
+    "percussion",
+    "parade"
+   ],
+   "dur": 34.81,
+   "title": "street_drummers.aif",
+   "author": "Heigh-hoo",
+   "source": "https://freesound.org/people/Heigh-hoo/sounds/18445/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "rooster",
+   "files": [
+    "rooster.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "kòk",
+    "coq",
+    "rooster",
+    "maten",
+    "matin",
+    "morning"
+   ],
+   "dur": 2.94,
+   "title": "Rooster chicken calls_2.wav",
+   "author": "AGFX",
+   "source": "https://freesound.org/people/AGFX/sounds/43382/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "running-steps",
+   "files": [
+    "running-steps.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "kouri",
+    "courir",
+    "run",
+    "pa",
+    "pas",
+    "steps"
+   ],
+   "dur": 3.29,
+   "title": "running",
+   "author": "Topschool",
+   "source": "https://freesound.org/people/Topschool/sounds/443218/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "saucepan",
+   "files": [
+    "saucepan-1.ogg",
+    "saucepan-2.ogg",
+    "saucepan-3.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "chodyè",
+    "casserole",
+    "saucepan",
+    "kizin",
+    "cuisine",
+    "kitchen",
+    "metal"
+   ],
+   "dur": 1.39,
+   "title": "metalPot1",
+   "author": "Kenney (kenney.nl)",
+   "source": "https://kenney.nl/assets/rpg-audio",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "street-ambience",
+   "files": [
+    "street-ambience.ogg"
+   ],
+   "kind": "ambience",
+   "loop": true,
+   "tags": [
+    "lari",
+    "rue",
+    "street",
+    "vil",
+    "ville"
+   ],
+   "dur": 43.3,
+   "title": "Shopping Street Ambience",
+   "author": "florianreichelt",
+   "source": "https://freesound.org/people/florianreichelt/sounds/451734/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "street-parade",
+   "files": [
+    "street-parade.ogg"
+   ],
+   "kind": "ambience",
+   "loop": true,
+   "tags": [
+    "rara",
+    "kanaval",
+    "carnaval",
+    "fanfare",
+    "parade",
+    "defile"
+   ],
+   "dur": 58.5,
+   "title": "Marching Band Passes By",
+   "author": "FlatHill",
+   "source": "https://freesound.org/people/FlatHill/sounds/211511/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "thunder",
+   "files": [
+    "thunder.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "loraj",
+    "tonnerre",
+    "thunder"
+   ],
+   "dur": 15.85,
+   "title": "Thunder.ogg",
+   "author": "lennyboy",
+   "source": "https://freesound.org/people/lennyboy/sounds/244053/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "tin-roof-steps",
+   "files": [
+    "tin-roof-steps.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "twati",
+    "toit",
+    "roof",
+    "tòl",
+    "tôle",
+    "tin",
+    "pa",
+    "pas",
+    "steps"
+   ],
+   "dur": 5.58,
+   "title": "Footsteps Metallic Muffled Louder.wav",
+   "author": "RutgerMuller",
+   "source": "https://freesound.org/people/RutgerMuller/sounds/50724/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "truck-horn",
+   "files": [
+    "truck-horn.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "kòn",
+    "klaksonn",
+    "klaxon",
+    "horn",
+    "taptap",
+    "tap-tap",
+    "machin",
+    "voiture",
+    "car"
+   ],
+   "dur": 3.86,
+   "title": "car horn.wav",
+   "author": "keweldog",
+   "source": "https://freesound.org/people/keweldog/sounds/182474/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "whistle",
+   "files": [
+    "whistle.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "fichèt",
+    "sifflet",
+    "whistle"
+   ],
+   "dur": 3.24,
+   "title": "Referee whistle blow, gymnasium.wav",
+   "author": "SpliceSound",
+   "source": "https://freesound.org/people/SpliceSound/sounds/218318/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "wind-soft",
+   "files": [
+    "wind-soft.ogg"
+   ],
+   "kind": "ambience",
+   "loop": true,
+   "tags": [
+    "van",
+    "vent",
+    "wind"
+   ],
+   "dur": 58.5,
+   "title": "a gentle breeze, wind 6",
+   "author": "mario1298",
+   "source": "https://freesound.org/people/mario1298/sounds/181255/",
+   "license": "CC0-1.0"
+  },
+  {
+   "id": "wings-flapping",
+   "files": [
+    "wings-flapping.ogg"
+   ],
+   "kind": "sfx",
+   "loop": false,
+   "tags": [
+    "zèl",
+    "ailes",
+    "wings",
+    "vole",
+    "voler",
+    "fly"
+   ],
+   "dur": 0.91,
+   "title": "wings.wav",
+   "author": "Godowan",
+   "source": "https://freesound.org/people/Godowan/sounds/240476/",
+   "license": "CC0-1.0"
+  }
+ ]
+}
